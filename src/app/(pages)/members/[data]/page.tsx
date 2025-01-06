@@ -25,7 +25,7 @@ export default async function Member({
   return (
     <>
       <h1 className="text-2xl md:text-3xl lg:text-4xl">{member?.name}</h1>
-      <div className="mt-4 md:flex">
+      <div className="mt-4 lg:flex">
         <Image
           src={`/image/${data}.png`}
           alt={member?.name || ""}
