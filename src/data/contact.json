@@ -1,0 +1,9 @@
+[
+  { "label": "Official Stie", "href": "/" },
+  {
+    "label": "Official Discord",
+    "href": "https://discord.com/invite/naruko.studio"
+  },
+  { "label": "Official GitHub", "href": "https://github.com/naruko-studio" },
+  { "label": "Email", "href": "mailto:official@naruko.studio" }
+]
