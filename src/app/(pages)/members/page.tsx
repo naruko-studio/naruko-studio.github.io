@@ -6,14 +6,7 @@ export const metadata: Metadata = {
   title: "Our Members",
 }
 
-const members = [
-  {
-    name: { text: "星月なるこ", spell: "hoshitsuki-naruko" },
-    image: "/image/hoshitsuki-naruko.png",
-    url: "/members/hoshitsuki-naruko",
-    tag: ["Streamer", "Vtuber", "Developer"],
-  },
-]
+import members from "@/data/members.json"
 
 export default function Members() {
   return (
