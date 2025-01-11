@@ -1,0 +1,15 @@
+{
+  "name": "Zhenyuan",
+  "birthday": "4/27",
+  "age": null,
+  "height": "170",
+  "weight": "Top Secret",
+  "story": "Hi 😆 I'm Zhenyuan ✨\u000AI'm from Taiwan and studying Computer Science at MUST 🏫\u000AI love exploring everything related to computers! 🥺",
+  "links": [
+    { "name": "Youtube", "url": "https://www.youtube.com/@zhenyuan0427" },
+    { "name": "Twitch", "url": "https://twitch.tv/Zhenyuan0427" },
+    { "name": "Bluesky", "url": "https://bsky.app/profile/zhenyuan.dev" },
+    { "name": "Discord", "url": "https://discord.gg/FMKsu7dDx8" }
+  ],
+  "imageExtension": "gif"
+}

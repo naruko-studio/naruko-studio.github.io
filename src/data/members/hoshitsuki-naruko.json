@@ -9,5 +9,6 @@
     { "name": "Youtube", "url": "https://youtube.com/@naruko_hstk" },
     { "name": "Twitch", "url": "https://twitch.tv/naruko_hstk" },
     { "name": "Bluesky", "url": "https://twitter.com/naruko_hstk" }
-  ]
+  ],
+  "imageExtension": "png"
 }

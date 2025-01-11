@@ -1,6 +1,7 @@
 import { Bluesky } from "@/components/icons/logos-bluesky"
 import { Twitch } from "@/components/icons/logos-twitch"
 import { Youtube } from "@/components/icons/logos-youtube-icon"
+import { Discord } from "@/components/icons/logos-discord"
 import { Button } from "@/components/ui/button"
 import memberData from "@/utils/member-data"
 import Image from "next/image"
@@ -9,10 +10,11 @@ const iconMap = {
   Bluesky,
   Twitch,
   Youtube,
+  Discord,
 }
 
 export async function generateStaticParams() {
-  return [{ data: "hoshitsuki-naruko" }]
+  return [{ data: "hoshitsuki-naruko" }, { data: "zhenyuan" }]
 }
 
 export default async function Member({
@@ -27,7 +29,7 @@ export default async function Member({
       <h1 className="text-2xl md:text-3xl lg:text-4xl">{member?.name}</h1>
       <div className="mt-4 lg:flex">
         <Image
-          src={`/image/${data}.png`}
+          src={`/image/${data}.${member?.imageExtension}`}
           alt={member?.name || ""}
           width={1000}
           height={1000}
