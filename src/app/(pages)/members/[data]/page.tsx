@@ -5,6 +5,7 @@ import { Discord } from "@/components/icons/logos-discord"
 import { Button } from "@/components/ui/button"
 import memberData from "@/utils/member-data"
 import Image from "next/image"
+import members from "@/data/members.json"
 
 const iconMap = {
   Bluesky,
@@ -28,14 +29,26 @@ export default async function Member({
     <>
       <h1 className="text-2xl md:text-3xl lg:text-4xl">{member?.name}</h1>
       <div className="mt-4 lg:flex">
-        <Image
-          src={`/image/${data}.${member?.imageExtension}`}
-          alt={member?.name || ""}
-          width={1000}
-          height={1000}
-          className="h-auto w-auto max-w-[80dvw] p-4 md:max-w-sm"
-          priority
-        />
+        <div className="text-center">
+          <Image
+            src={`/image/${data}.${member?.imageExtension}`}
+            alt={member?.name || ""}
+            width={1000}
+            height={1000}
+            className="h-auto w-auto max-w-[80dvw] p-4 md:max-w-sm"
+            priority
+          />
+          {member?.illust.name !== null ? (
+            <p>
+              Illustrator:{" "}
+              <a href={member?.illust.url} className="text-primary">
+                {member?.illust.name}
+              </a>
+            </p>
+          ) : (
+            <></>
+          )}
+        </div>
         <div>
           <p>Name: {member?.name}</p>
           <p>Birthday: {member?.birthday}</p>

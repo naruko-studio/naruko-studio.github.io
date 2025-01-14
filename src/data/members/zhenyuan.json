@@ -11,5 +11,6 @@
     { "name": "Bluesky", "url": "https://bsky.app/profile/zhenyuan.dev" },
     { "name": "Discord", "url": "https://discord.gg/FMKsu7dDx8" }
   ],
-  "imageExtension": "gif"
+  "imageExtension": "gif",
+  "illust": { "name": null, "url": null }
 }

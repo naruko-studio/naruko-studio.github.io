@@ -10,5 +10,6 @@
     { "name": "Twitch", "url": "https://twitch.tv/naruko_hstk" },
     { "name": "Bluesky", "url": "https://twitter.com/naruko_hstk" }
   ],
-  "imageExtension": "png"
+  "imageExtension": "png",
+  "illust": { "name": "吐司是一片浣熊", "url": "https://twitch.tv/toasti_owo_" }
 }
