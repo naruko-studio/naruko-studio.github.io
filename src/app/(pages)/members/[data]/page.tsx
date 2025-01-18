@@ -5,7 +5,6 @@ import { Discord } from "@/components/icons/logos-discord"
 import { Button } from "@/components/ui/button"
 import memberData from "@/utils/member-data"
 import Image from "next/image"
-import members from "@/data/members.json"
 
 const iconMap = {
   Bluesky,
@@ -14,6 +13,17 @@ const iconMap = {
   Discord,
 }
 
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ data: string }>
+}) {
+  const data = (await params).data
+  const member = memberData(data)
+  return {
+    title: `About ${member?.name}`,
+  }
+}
 export async function generateStaticParams() {
   return [{ data: "hoshitsuki-naruko" }, { data: "zhenyuan" }]
 }
