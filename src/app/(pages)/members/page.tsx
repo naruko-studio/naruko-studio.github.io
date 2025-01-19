@@ -15,7 +15,7 @@ export default function Members() {
       <h2 className="mt-4 text-xl md:text-2xl lg:text-3xl">
         Here are members of our team.
       </h2>
-      <div className="grid grid-cols-1 place-items-center gap-8 md:grid-cols-2 lg:grid-cols-4">
+      <div className="mt-4 grid grid-cols-1 place-items-center gap-8 md:grid-cols-2 lg:grid-cols-4">
         {members.map((member, index) => {
           return (
             <Link
