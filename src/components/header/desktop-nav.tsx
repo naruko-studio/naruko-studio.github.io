@@ -20,23 +20,12 @@ export default function DesktopNav() {
             {item.children ? (
               <>
                 <NavigationMenuTrigger>{item.label}</NavigationMenuTrigger>
-                <NavigationMenuContent>
+                <NavigationMenuContent className="space-y-4 p-4">
                   {item.children.map((child, index) => (
-                    <Link key={index} href={child.href} legacyBehavior passHref>
-                      <NavigationMenuLink
-                        className={navigationMenuTriggerStyle()}
-                      >
-                        {child.label}
-                      </NavigationMenuLink>
+                    <Link key={index} href={child.href} className="block w-max">
+                      {child.label}
                     </Link>
                   ))}
-                  <Link href="/members" legacyBehavior passHref>
-                    <NavigationMenuLink
-                      className={navigationMenuTriggerStyle()}
-                    >
-                      Member List
-                    </NavigationMenuLink>
-                  </Link>
                 </NavigationMenuContent>
               </>
             ) : (
