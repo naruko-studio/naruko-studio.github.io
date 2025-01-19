@@ -35,9 +35,13 @@ export default function Members() {
                 {`${member.name.text}
 (${member.name.spell})`}
               </span>
-              <div className="space-x-4 text-sm">
+              <div className="max-w-[200px] space-x-4 text-sm">
                 {member.tag.map((tag, index) => {
-                  return <span key={index}>#{tag}</span>
+                  return (
+                    <span key={index} className="break-words">
+                      #{tag}
+                    </span>
+                  )
                 })}
               </div>
             </Link>
