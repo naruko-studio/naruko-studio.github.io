@@ -1,16 +1,22 @@
 import { Bluesky } from "@/components/icons/logos-bluesky"
-import { Twitch } from "@/components/icons/logos-twitch"
-import { Youtube } from "@/components/icons/logos-youtube-icon"
 import { Discord } from "@/components/icons/logos-discord"
+import { Facebook } from "@/components/icons/logos-facebook"
+import { Instagram } from "@/components/icons/logos-instagram"
+import { Twitch } from "@/components/icons/logos-twitch"
+import { Twitter } from "@/components/icons/logos-twitter"
+import { Youtube } from "@/components/icons/logos-youtube-icon"
 import { Button } from "@/components/ui/button"
 import memberData from "@/utils/member-data"
 import Image from "next/image"
 
 const iconMap = {
   Bluesky,
-  Twitch,
-  Youtube,
   Discord,
+  Facebook,
+  Instagram,
+  Twitch,
+  Twitter,
+  Youtube,
 }
 
 export async function generateMetadata({
@@ -25,7 +31,11 @@ export async function generateMetadata({
   }
 }
 export async function generateStaticParams() {
-  return [{ data: "hoshitsuki-naruko" }, { data: "zhenyuan" }]
+  return [
+    { data: "hoshitsuki-naruko" },
+    { data: "zhenyuan" },
+    { data: "natsukawa-taoyuan" },
+  ]
 }
 
 export default async function Member({
@@ -66,10 +76,13 @@ export default async function Member({
           typeof member?.age === "string" ? (
             <p>Age: {member?.age}</p>
           ) : null}
-          <p>Height: {member?.height}cm</p>
           <p>
-            Weight:{" "}
-            {`${member?.weight}${typeof member?.weight === "number" ? "kg" : ""}`}
+            Height: {member?.height}
+            {typeof member?.height === "number" ? "cm" : ""}
+          </p>
+          <p>
+            Weight: {member?.weight}
+            {typeof member?.weight === "number" ? "kg" : ""}
           </p>
           <p className="whitespace-pre-wrap break-words">
             Story: {`\u000A${member?.story}`}

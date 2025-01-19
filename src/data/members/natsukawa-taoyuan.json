@@ -1,0 +1,23 @@
+{
+  "name": "夏川桃源(Natsukawa Taoyuan)",
+  "birthday": "7/7",
+  "age": null,
+  "height": "Top Secret",
+  "weight": "Top Secret",
+  "story": "Good morning! Nice to meet you. I'm Natsukawa Taoyuan.\u000A(Please don't call me Natsukawa. Natsukawa is my favorite Idol. But if you're already used to it, that's fine.)\u000APhysically 🚹 male, mentally 🚺 female (I was definitely born the wrong gender).\u000AI'm a dual-role enthusiast — into both cosplay and photography.\u000A\u000AI love JK (Japanese school uniforms).\u000AI try to attend every event, mainly in northern and central regions\u000a(occasionally traveling to the south).\u000AI'm open to outdoor photoshoots and charge a small fee\u000a(it's a tiny price for great photos — isn't that worth it?).\u000A\u000AI don't have many deal-breakers and come equipped with a lightning rod for drama.\u000aAs long as it's not over the top, I'm rarely upset.",
+  "links": [
+    { "name": "Youtube", "url": "https://youtube.com/@tom38360" },
+    { "name": "Twitch", "url": "https://twitch.tv/tom38360" },
+    {
+      "name": "Facebook",
+      "url": "https://www.facebook.com/profile.php?id=61561619012269"
+    },
+    { "name": "Twitter", "url": "https://twitter.com/tom38360" },
+    {
+      "name": "Instagram",
+      "url": "https://www.instagram.com/natsukawa_taoyuan/"
+    }
+  ],
+  "imageExtension": "jpg",
+  "illust": { "name": null, "url": null }
+}
