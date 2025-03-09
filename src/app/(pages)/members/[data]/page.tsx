@@ -32,7 +32,7 @@ export async function generateMetadata({
 }
 export async function generateStaticParams() {
   return [
-    { data: "hoshitsuki-naruko" },
+    // { data: "hoshitsuki-naruko" },
     { data: "zhenyuan" },
     { data: "natsukawa-taoyuan" },
   ]

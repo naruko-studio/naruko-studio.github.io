@@ -1,5 +1,11 @@
 [
   {
+    "name": { "text": "星月なるこ", "spell": "hoshitsuki-naruko" },
+    "image": "/image/hoshitsuki-naruko.png",
+    "url": "/members/hoshitsuki-naruko",
+    "tag": ["Streamer", "Vtuber", "Developer"]
+  },
+  {
     "name": { "text": "Zhenyuan", "spell": "zhenyuan" },
     "image": "/image/zhenyuan.gif",
     "url": "/members/zhenyuan",
